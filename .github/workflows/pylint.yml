@@ -20,6 +20,5 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        flake8 --ignore=E501,E231 *.py
         pylint --disable=C0301 --disable=C0114 --disable=C0116 --disable=W0612 --disable=R0912 --disable=R0914 --disable=W0603 --disable=C0103 --disable=R0915 --disable=R0913 *.py
         
